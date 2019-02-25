@@ -1,17 +1,8 @@
-import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-import store from './lib/redux';
+import React from 'react';
+import ImageSlider from './components/ImageSlider';
 
-import InboxScreen from './components/InboxScreen';
-
-class App extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <InboxScreen />
-      </Provider>
-    );
-  }
-}
+const App = () => (
+  <ImageSlider />
+)
 
 export default App;
